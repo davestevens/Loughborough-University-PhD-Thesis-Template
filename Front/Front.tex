@@ -1,0 +1,65 @@
+% Front matter of the Thesis
+% Title page
+% Loughborough University Thesis Access Form
+% Loughborough University Certificate of Originality
+% Abstract
+% Acknowledgements
+\title{PhD Thesis Title}
+
+\author{by\\Author Name\\
+\\
+{\bf A Doctoral Thesis}\\
+\\
+Submitted in partial fulfilment of the requirements for the award of\\
+Doctor of Philosophy of Loughborough University\\
+\\
+\copyright
+\hspace{1 dd} Author Name Year\\
+\\
+Month Year
+}
+\date{} % Used to remove date from title so it can be set at any date rather than the current date
+
+\maketitle
+
+% Set page numbers to roman numerals for front matter
+\pagenumbering{roman}
+
+% PDF exports of Word Documents available (Exported August 2012)
+% Thesis Access Form
+\includepdf[pages=1, pagecommand=, templatesize={5in}{10in}]{Front/LU/access.pdf}
+% Certificate of Originality
+\includepdf[pages=-, pagecommand=, templatesize={5in}{10in}]{Front/LU/origin.pdf}
+
+% Abstract
+\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Abstract}
+Include an abstract of your Thesis, should be around 300 words (1 side of A4).
+
+% Acknowledgements
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\chapter*{Acknowledgements}
+Acknowledgement section.
+
+% Set the depth for your table of content
+% Currently set at 2 (Chapter, Section, Subsection)
+\setcounter{tocdepth}{2}
+% Include a table of content
+\tableofcontents
+
+% Include a list of figures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+% Include a list of tables
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+% Include a list of abbreviations using nomenclature package
+%\addcontentsline{toc}{chapter}{List of Abbreviations}
+%\printnomenclature[3cm] 
+
+\newpage
+
+% Set page numbering to arabic for body of Thesis
+\pagenumbering{arabic}

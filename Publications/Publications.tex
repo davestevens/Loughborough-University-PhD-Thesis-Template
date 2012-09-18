@@ -1,0 +1,26 @@
+\addcontentsline{toc}{chapter}{Publications}
+\chapter*{Publications}
+\label{chap:Publications}
+
+% Author publication section
+% If not using the references per chapter option you need to include the bibliography inline
+% This was done by creating a bibtex file containing the publications and including in a separate LaTeX file, using \nocite{*} this includes all bibtex items, generating the .bbl file and then copying and pasting below.
+
+List of authors academic publications
+
+\begingroup
+% Remove title and space of header for this chapter
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{-80pt}
+\renewcommand\bibname{}
+\begin{thebibliography}{1}
+
+%\bibitem{}
+
+\end{thebibliography}
+\endgroup
+
+% To include copies of the publications use the includepdf package and point to .pdf files of papers
+% Example
+%\includepdf[pages=-, pagecommand=, templatesize={5in}{10in}]{Publications/Pubs/le1_biothreads.pdf}
